@@ -1,0 +1,11 @@
+{
+  "name": "ФінКвест",
+  "short_name": "ФінКвест",
+  "description": "Гейміфікований застосунок фінансової грамотності для молоді",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F4F7FC",
+  "theme_color": "#1D4ED8",
+  "lang": "uk",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

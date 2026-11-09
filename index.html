@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta name="description" content="ФінКвест — гейміфікований застосунок фінансової грамотності для молоді. Навчальний прототип.">
+  <title>ФінКвест — фінансова грамотність у форматі гри</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <main id="app" aria-live="polite"></main>
+
+    <nav id="nav" class="nav" hidden aria-label="Головне меню">
+      <a href="#/home" data-route="home"><span class="nav-ico" aria-hidden="true">🏠</span><span>Головна</span></a>
+      <a href="#/goal" data-route="goal"><span class="nav-ico" aria-hidden="true">🎯</span><span>Ціль</span></a>
+      <a href="#/sim" data-route="sim"><span class="nav-ico" aria-hidden="true">📈</span><span>Тренажер</span></a>
+      <a href="#/learn" data-route="learn"><span class="nav-ico" aria-hidden="true">📚</span><span>Навчання</span></a>
+      <a href="#/profile" data-route="profile"><span class="nav-ico" aria-hidden="true">👤</span><span>Профіль</span></a>
+    </nav>
+  </div>
+
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-head">
+        <h2 id="sheet-title"></h2>
+        <button class="icon-btn" data-close aria-label="Закрити">✕</button>
+      </div>
+      <div id="sheet-body"></div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="assertive"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
